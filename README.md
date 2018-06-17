@@ -1,4 +1,6 @@
 # react-context-connector
+[![npm version](https://badge.fury.io/js/react-context-connector.svg)](https://badge.fury.io/js/react-context-connector)
+
 React HOC to the new Context API to keep the use as simple as React-Redux connect HOC.
 
 ## Usage

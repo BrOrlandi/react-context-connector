@@ -1,0 +1,8 @@
+*.log
+.cache/
+example/dist
+example/
+src/
+output/
+.babelrc
+README.md

@@ -20,6 +20,13 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+/**
+ * Generates a HOC to wrap a component with context values in props.
+ *
+ * @returns {Component} A HOC which pass context state into props to child component.
+ * @param {Object} ContextProvider an Object with `Consumer` attribute, like the Context object or a Custom Provider
+ * @param {Function} mapContextToProps a functiona that receives the context from `Context.Consumer` and returns a object to be used as props for the wrapped component.
+ */
 var connectContext = function connectContext(ContextProvider, mapContextToProps) {
   return function (Component) {
     return function (_React$Component) {
