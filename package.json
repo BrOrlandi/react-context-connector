@@ -1,0 +1,28 @@
+{
+  "name": "react-context-connector",
+  "version": "0.1.0",
+  "description": "React HOC to the new Context API to keep the use as simple as React-Redux connect HOC.",
+  "main": "dist/index.js",
+  "repository": "git@github.com:BrOrlandi/react-context-connector.git",
+  "author": "Bruno Orlandi <brorlandi@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel example/src/index.html -d example/dist",
+    "build": "babel src -d dist ",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^16.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.9.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.3",
+    "react-dom": "^16.3"
+  }
+}
