@@ -14,6 +14,7 @@ CounterDisplay.propTypes = {
   value: PropTypes.number,
 };
 
+// map context state and functions to component props
 const mapContextToProps = context => ({
   value: context.count,
 });

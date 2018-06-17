@@ -9,7 +9,8 @@
   "scripts": {
     "start": "parcel example/src/index.html -d example/dist",
     "build": "babel src -d dist ",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "docs": "jsdox src"
   },
   "peerDependencies": {
     "react": "^16.3"
@@ -20,6 +21,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "jsdox": "^0.4.10",
     "parcel-bundler": "^1.9.1",
     "prop-types": "^15.6.1",
     "react": "^16.3",

@@ -16,6 +16,7 @@ CounterButtons.propTypes = {
   decrement: PropTypes.func,
 };
 
+// map context state and functions to component props
 const mapContextToProps = context => ({
   increment: context.incrementCount,
   decrement: context.decrementCount,
