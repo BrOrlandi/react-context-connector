@@ -1,6 +1,6 @@
 {
   "name": "react-context-connector",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React HOC to the new Context API to keep the use as simple as React-Redux connect HOC.",
   "main": "dist/index.js",
   "repository": "git@github.com:BrOrlandi/react-context-connector.git",
