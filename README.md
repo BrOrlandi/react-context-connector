@@ -55,7 +55,7 @@ CounterProvider.Consumer = CounterContext.Consumer;
 ### Create your component and connect it to the Context
 
 ```js
-import connectContext from '../../src';
+import connectContext from 'react-context-connector';
 import CounterProvider from './CounterProvider';
 
 const CounterDisplay = ({ value }) => (
