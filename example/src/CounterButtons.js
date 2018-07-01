@@ -5,9 +5,9 @@ import connectContext from '../../src';
 import CounterProvider from './CounterProvider';
 
 const CounterButtons = ({ increment, decrement }) => (
-  <div>
-    <button onClick={increment}>Increment</button>
-    <button onClick={decrement}>Decrement</button>
+  <div id="buttons">
+    <button id="increment" onClick={increment}>Increment</button>
+    <button id="decrement" onClick={decrement}>Decrement</button>
   </div>
 );
 

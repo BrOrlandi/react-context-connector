@@ -5,7 +5,7 @@ import connectContext from '../../src';
 import CounterProvider from './CounterProvider';
 
 const CounterDisplay = ({ value }) => (
-  <div>
+  <div id="display">
     Counter: {value}
   </div>
 );
