@@ -6,3 +6,4 @@ src/
 output/
 .babelrc
 README.md
+coverage/
