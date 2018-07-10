@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel example/src/index.html -d example/dist",
-    "build": "babel src -d dist ",
+    "build": "babel src -d dist --ignore __tests__",
     "test": "jest src/",
     "test-ci": "jest src/ --coverage --coverageReporters=text-lcov | coveralls",
     "prepublishOnly": "npm run build",
