@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import connectContext from '../../src';
 import CounterProvider from './CounterProvider';
 
-const CounterDisplay = ({ value }) => (
+const CounterDisplay = ({ value, label }) => (
   <div id="display">
-    Counter: {value}
+    {label}: {value}
   </div>
 );
 

@@ -9,7 +9,7 @@ import CounterProvider from './CounterProvider';
 const App = () => (
   <CounterProvider>
     <div>
-      <CounterDisplay />
+      <CounterDisplay label="Awesome counter"/>
       <CounterButtons />
     </div>
   </CounterProvider>

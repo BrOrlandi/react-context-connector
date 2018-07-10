@@ -9,7 +9,7 @@ import CounterProvider from '../../example/src/CounterProvider';
 const AppTest = (
   <CounterProvider>
     <div>
-      <CounterDisplay />
+      <CounterDisplay label='Test counter'/>
       <CounterButtons />
     </div>
   </CounterProvider>
@@ -22,7 +22,7 @@ describe('react-context-connector', () => {
     const display = counterRendered.root.findByProps({ id: "display" }).parent;
     const buttons = counterRendered.root.findByProps({ id: "buttons" }).parent;
 
-    expect(display.props).toEqual({ value: 0 });
+    expect(display.props).toEqual({ value: 0, label: 'Test counter' });
     expect(Object.keys(buttons.props)).toEqual(['increment', 'decrement']);
     expect(buttons.props.increment).toBeInstanceOf(Function);
     expect(buttons.props.decrement).toBeInstanceOf(Function);
